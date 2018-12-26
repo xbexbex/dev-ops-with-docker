@@ -6,7 +6,7 @@ Install and run with:
 docker run -p 8080:8080 -d xbexbex/react-webpack-typescript-babel-sass-template
 ```
 The app should now be visible at http://localhost:8080
-## Commands:
+## Commands used for the exercise:
 ```shell
 docker build -t react-webpack-typescript-babel-sass-template .
 docker tag react-webpack-typescript-babel-sass-template xbexbex/react-webpack-typescript-babel-sass-template
