@@ -1,5 +1,5 @@
 # 1.8
-Link to docker hub: (https://cloud.docker.com/repository/docker/xbexbex/react-webpack-typescript-babel-sass-template)[https://cloud.docker.com/repository/docker/xbexbex/react-webpack-typescript-babel-sass-template]
+Link to docker hub: https://cloud.docker.com/repository/docker/xbexbex/react-webpack-typescript-babel-sass-template
 ## Running
 Install and run with:
 ```shell
