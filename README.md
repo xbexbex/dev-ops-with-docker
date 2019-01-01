@@ -12,11 +12,11 @@ https://docker-hy.github.io/
 [1.8](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%201/1.8)  
 
 ## Part 2
-[2.1](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.1)
-[2.2](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.2)
-[2.3](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.3)
-[2.4](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.4)
-[2.5](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.5)
+[2.1](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.1)  
+[2.2](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.2)  
+[2.3](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.3)  
+[2.4](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.4)  
+[2.5](https://github.com/xbexbex/dev-ops-with-docker/blob/master/Part%202/2.5)  
 
 
 
