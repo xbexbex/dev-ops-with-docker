@@ -29,7 +29,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./backend/logs.txt:/app/logs.txt
+      - ./logs.txt:/app/logs.txt
     depends_on:
       - redis
   frontend:
