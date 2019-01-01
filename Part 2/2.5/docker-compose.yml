@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=user
+      - POSTGRES_DB=db
+    expose:
+      - 5432
+  redis:
+    image: redis
+    restart: unless-stopped
+    expose: 
+      - 6379
+  backend:
+    build: ./back
+    restart: unless-stopped
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_HOST=postgres
+      - DB_USERNAME=user
+      - DB_PASSWORD=password
+      - DB_NAME=db
+      - FRONT_URL=http://frontend:5000
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend/logs.txt:/app/logs.txt
+    depends_on:
+      - redis
+  frontend:
+    build: ./front
+    restart: unless-stopped
+    environment:
+      - API_URL=http://localhost:8000
+    depends_on:
+      - backend
+  nginx:
+    image: nginx
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - backend
+      - frontend
+  

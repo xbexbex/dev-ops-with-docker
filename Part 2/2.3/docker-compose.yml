@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  backend:
+    build: back
+    restart: on-failure
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_HOST=postgres
+      - DB_USERNAME=user
+      - DB_PASSWORD=password
+      - DB_NAME=db
+    ports:
+        - 8000:8000
+  redis:
+    image: redis
+    expose: 
+      - 6379
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=user
+      - POSTGRES_DB=db
+    expose:
+      - 5432
+
+  

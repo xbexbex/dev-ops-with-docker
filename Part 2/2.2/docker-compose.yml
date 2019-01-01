@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  backend:
+      build: back
+      environment:
+        - REDIS=redis
+        - REDIS_PORT=6379
+      ports:
+        - "8000:8000"
+  redis:
+      image: redis
+      expose: 
+        - 6379
+  
