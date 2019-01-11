@@ -5,7 +5,7 @@ services:
     build: https://github.com/docker-hy/ml-kurkkumopo-training.git
     volumes:
       - model-data:/src/model
-      - ./imgs:/src/imgs
+      - images-data:/src/imgs
   backend:
     build: https://github.com/docker-hy/ml-kurkkumopo-backend.git
     ports:
@@ -23,5 +23,4 @@ services:
 
 volumes:
   model-data:
-
-  
+  images-data:
